@@ -1,4 +1,10 @@
-# Zadanie
+# SML
+
+Direct link: https://stowarzyszeniemuzycznedb.web.app
+
+Angular + Google Firebase app. Advertise your concerts, check for cool events in your area and attend meet other musicians. All of this is available, thanks to this app. It was made as a university project, probably won't be developed anymore though. App is responsive, connected to database using Google Firebase, adapted to the WCAG rules. Main goal was to design intuitive, working form, that checks if your input is correct.
+
+Deleted connection to database from source files for obvious reasons. If you want to check how it works, click this link: https://stowarzyszeniemuzycznedb.web.app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
