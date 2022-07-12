@@ -6,6 +6,8 @@ Angular + Google Firebase app. Advertise your concerts, check for cool events in
 
 Deleted connection to database from source files for obvious reasons. If you want to check how it works, click this link: https://stowarzyszeniemuzycznedb.web.app
 
+Also, raw code probably won't work on your PC, as it needs additional packages, not included in this repo. Whole directory with all packages would kill my internet. This code is just for preview, sorry.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
 ## Development server
