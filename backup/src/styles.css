@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+html, body, h1, div, h2, h3, p, img {
+    box-sizing: border-box;
+    margin: 0px;
+}

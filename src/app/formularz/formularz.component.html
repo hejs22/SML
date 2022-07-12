@@ -1,0 +1,93 @@
+<div id="formularz" class="absolute-center col-sm">
+
+    <form id="formularz-form" name="formularz-form" onsubmit="return walidacja(this)" (ngSubmit)=addItem($event)>
+        <div class="form-row">
+            <div class="row"> 
+              <div> <span>Przedstaw się:</span> </div> 
+              <div> <input placeholder="Imię, nazwisko lub pseudonim" type=text id=login> <div class=help id=login-help onMouseOut=czyscLogin() onMouseOver=loginPomoc()>?</div> <div id=login-pomoc class=pomoc></div> </div>
+             </div>
+        </div>
+    
+          <div class="form-row">
+            <div class="row"> 
+              <div> <span>Adres email:</span> </div> 
+              <div> <input placeholder="example@mail.com" required type=text id=email> <div class=help id=email-help onMouseOut=czyscEmail() onMouseOver=emailPomoc()>?</div> <div id=email-pomoc class=pomoc></div> </div>
+             </div>
+        </div>
+
+        <div class="form-row">
+          <div class="row"> 
+            <div> <span>Telefon:</span> </div> 
+            <div> <input placeholder="123-456-789" required type=text id=telefon> <div class=help id=telefon-help onMouseOut=czyscTelefon() onMouseOver=telefonPomoc()>?</div> <div id=telefon-pomoc class=pomoc></div> </div>
+           </div>
+      </div>
+
+        <div class="form-row">
+            <div class="row"> 
+              <div> <span>Tytuł wydarzenia:</span> </div> 
+              <div> <input required type=text placeholder="Jak nazwiesz swoje wydarzenie?" id=tytul>
+                <div class=help id=tytul-help  onMouseOut=czyscTytul() onMouseOver=tytulPomoc()>?</div> <div id=tytul-pomoc class=pomoc></div> </div>
+             </div>
+        </div>
+
+    
+        <div class="form-row">
+            <div class="row"> 
+              <div> <span id="span-opis">Opis wydarzenia:</span></div> 
+              <div> <textarea placeholder="Napisz kilka zdań o swoim wydarzeniu" required id=opis> Napisz kilka zdań o swoim wydarzeniu </textarea>
+                <div class=help id=opis-help onMouseOut=czyscOpis() onMouseOver=opisPomoc()>?</div> <div id=opis-pomoc class=pomoc></div> </div>
+             </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="row"> 
+          
+            <div> <span>Wybór lokalu:</span> </div> 
+              <div>
+              <select id="miejsce">
+                  <option value="ul. Piotrkowska 100"> ul. Piotrkowska 100 (do 200 os.) </option>
+                  <option value="ul. Narutowicza 25"> ul. Narutowicza 25 (do 50 os.) </option>
+                </select>
+            </div>
+          
+           </div>
+      </div>
+
+
+        <div class="form-row">
+            <div class="row"> 
+              <div> <span>Data i rodzaj wydarzenia:</span> </div> 
+                <div> 
+                  <select id="rodzaj">
+                    <option value="Koncert">Koncert</option>
+                    <option value="Wernisaż">Wernisaż</option>
+                    <option value="Jam Session">Jam Session</option>
+                    <option value="Warsztaty">Warsztaty</option>
+                  </select>
+                  
+
+
+ 
+                  <input type="date" id="start-data" name="data" value="2022-06-15">
+                  <div class=help id=data-help onMouseOut=czyscData() onMouseOver=dataPomoc()>?</div> <div id=data-pomoc class=pomoc> </div>
+                   
+              </div>
+             </div>
+        </div>
+
+
+    
+        <div id=buttons>
+            <input type=reset class=button value=Wyczyść onclick=wyczysc()>
+            <input type=submit class=button value="Dodaj" onclick=walidacja()>
+        </div>
+    </form>
+
+</div>
+
+<div id="sukces">
+  Udało Ci się dodać wydarzenie, które oczekuje teraz na weryfikację
+  <br>
+  <input type="button" class="button" value="OK" id="schowaj" onclick="hide()">
+</div>

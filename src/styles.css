@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(./assets/fonts/Montserrat.ttf) format("truetype");
+}
+
+body {
+    text-align: center;
+    background: rgb(240, 240, 240);
+    /*    transition: 0.3s; */
+    font-size: 11px;
+    overflow-x: hidden;
+    font-family: Montserrat;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+html, body, h1, div, h2, h3, p, img {
+    box-sizing: border-box;
+    margin: 0px;
+}
+

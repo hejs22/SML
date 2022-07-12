@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Stowarzyszenie Muzyków Łódzkich</title>
+  <script type = "text/javascript">
+
+
+      const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce))");
+      const details = document.querySelector(".object-and-details > details");
+
+      if (mediaQuery.matches) {
+        details.removeAttribute("open");
+}
+
+
+    var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (window.pageYOffset > 300) {
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("menu").style.top = "0";
+          } else {
+            document.getElementById("menu").style.top = "-80px";
+          }
+        } else {
+          document.getElementById("menu").style.top = "0";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+
+      var nocny = 0;
+
+          function czyscLogin() {
+              document.getElementById("login-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("login-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("login-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+
+          
+          function czyscEmail() {
+              document.getElementById("email-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("email-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("email-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+
+          
+          function czyscTytul() {
+              document.getElementById("tytul-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("tytul-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("tytul-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+
+          
+          function czyscOpis() {
+              document.getElementById("opis-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("opis-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("opis-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+
+          
+          function czyscData() {
+              document.getElementById("data-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("data-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("data-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+
+          
+          function czyscTelefon() {
+              document.getElementById("telefon-pomoc").innerHTML = "";
+              if (nocny) {
+                document.getElementById("telefon-pomoc").style = 'color: rgb(255, 196, 0);';
+            } else {
+                document.getElementById("telefon-pomoc").style = 'color: rgb(42, 0, 158);';
+            }
+          }
+  
+          function loginPomoc() {
+              document.getElementById("login-pomoc").innerHTML = "Przedstaw się (min. 2 znaki)";
+          }
+
+          function opisPomoc() {
+              document.getElementById("opis-pomoc").innerHTML = "Krótki opis Twojego wydarzenia, do 600 znaków";
+          }
+
+          function dataPomoc() {
+              document.getElementById("data-pomoc").innerHTML = "Wybierz dzień, w którym dany lokal jest wolny";
+          }
+  
+          function emailPomoc() {
+              document.getElementById("email-pomoc").innerHTML = "Wymagany do kontaktu zwrotnego";
+          }
+
+          function telefonPomoc() {
+              document.getElementById("telefon-pomoc").innerHTML = "Podaj w formacie XXX-XXX-XXX";
+          }
+
+          function tytulPomoc() {
+              document.getElementById("tytul-pomoc").innerHTML = "Krótki tytuł Twojego wydarzenia, do 100 znaków";
+          }
+  
+          function wyczysc() {
+            if (nocny) {
+              for (var i = 0; i < 6; i++) {
+                document.getElementsByClassName("pomoc")[i].style = 'color: rgb(255, 196, 0);';
+                document.getElementsByClassName("pomoc")[i].innerHTML = "";
+                document.getElementsByClassName("help")[i].innerHTML = "?";
+                document.getElementsByClassName("help")[i].style = "border-color:white; color:white";
+                //document.getElementsByClassName("help")[i].style = 'color: black; background-color: white; border: 1px solid white; font-weight: bold;';
+              }
+            } else {
+              for (var i = 0; i < 6; i++) {
+                document.getElementsByClassName("pomoc")[i].style = 'color: rgb(42, 0, 158);';
+                document.getElementsByClassName("pomoc")[i].innerHTML = "";
+                document.getElementsByClassName("help")[i].innerHTML = "?";
+                document.getElementsByClassName("help")[i].style = "border-color:black; color:black"
+                //document.getElementsByClassName("help")[i].style = 'color: black; background-color: white; border: 1px solid white; font-weight: bold;';
+              }
+            }
+          }
+
+
+
+          
+          var check1;
+          var check2;
+          var check3;
+          var check4;
+          var check5;
+  
+          
+
+          function scrollujKalendarz() {
+              document.getElementById('formularz-pointer').scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+
+          function scrollujPolecane() {
+              document.getElementById('polecane').scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+
+          function scrollujGaleria() {
+              document.getElementById('galeria-pointer').scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+
+
+    function TrybNocny() {
+      nocny = 1;
+      document.getElementsByTagName("body")[0].style = 'background: rgb(35, 35, 35);';
+      for (var i = 0; i < 4; i++) {
+        document.getElementsByClassName("wydarzenie-container")[i].style = 'background: rgb(50, 50, 50); color: white;';
+        //document.getElementsByClassName("wydarzenie-hover")[i].style = 'background: rgb(2, 123, 206);';
+      }
+      for (var i = 0; i < 3; i++) {
+        document.getElementsByClassName("naglowek")[i].style = 'color: white;';
+      }
+      for (var i = 0; i < 3; i++) {
+        document.getElementsByClassName("notka-bilety")[i].style = 'color: white;';
+      }
+      for (var i = 0; i < 6; i++) {
+        document.getElementsByClassName("pomoc")[i].style = 'color: rgb(255, 196, 0);';
+        document.getElementsByClassName("help")[i].style = "border-color:white; color:white";
+        //document.getElementsByClassName("help")[i].style = 'color: black; background-color: white; border: 1px solid white; font-weight: bold;';
+      }
+      //document.getElementById("kalendarz").style = 'background: rgb(2, 123, 206);';
+      document.getElementById("formularz2").style = 'background: rgba(50, 50, 50, 0.9); color: white;';
+      //document.getElementById("footer").style = 'background: rgb(2, 123, 206);';
+      document.getElementById("menu").style = 'background: rgb(50, 50, 50); color: white;';
+      document.getElementsByClassName("jasny")[0].style = 'visibility: visible;';
+//      document.getElementById("baner").style = 'background: rgb(4, 150, 255);';
+
+     // document.getElementById("footer-img-container").innerHTML = "<img class=\"footer-img\" src=\"assets/images/muzyk2.png\">";
+
+    }
+
+    function TrybJasny() {
+      nocny = 0;
+      document.getElementsByTagName("body")[0].style = 'background: rgb(240, 240, 240);';
+      for (var i = 0; i < 4; i++) {
+        document.getElementsByClassName("wydarzenie-container")[i].style = 'background: rgb(255, 255, 255); color: black;';
+        //document.getElementsByClassName("wydarzenie-hover")[i].style = 'background: rgb(4, 150, 255);';
+      }
+      for (var i = 0; i < 3; i++) {
+        document.getElementsByClassName("naglowek")[i].style = 'color: black;';
+      }
+      for (var i = 0; i < 3; i++) {
+        document.getElementsByClassName("notka-bilety")[i].style = 'color: black;';
+      }
+      for (var i = 0; i < 6; i++) {
+        document.getElementsByClassName("pomoc")[i].style = 'color: rgb(42, 0, 158);';
+        document.getElementsByClassName("help")[i].style = "border-color: black; color: black";
+       // document.getElementsByClassName("help")[i].style = 'color: white; background-color: rgb(30, 200, 250); border: 1px solid rgb(30, 200, 250) ;';
+      }
+     // document.getElementById("kalendarz").style = 'background: rgb(4, 150, 255);';
+      document.getElementById("formularz2").style = 'background: rgba(255, 255, 255, 1); color: black;';
+      //document.getElementById("footer").style = 'background: rgb(4, 150, 255);';
+  //    document.getElementById("baner").style = 'background: rgb(75, 179, 253);';
+      document.getElementById("menu").style = 'background: rgb(255, 255, 255); color: black;';
+      document.getElementsByClassName("jasny")[0].style = 'visibility: hidden;';
+
+      // document.getElementById("footer-img-container").innerHTML = " <img class=\"footer-img\" src=\"assets/images/muzyk.png\"> ";
+    }              
+          
+    document.addEventListener("DOMContentLoaded", function() {
+      TrybNocny();
+});
+  </script>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

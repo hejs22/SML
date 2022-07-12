@@ -1,0 +1,204 @@
+
+<div id="strona">
+
+  <div id="menu">
+    <div class="menu-container"> 
+        <div class="row">
+          <div class="menu-logo-blok"> SMŁ</div>
+          <div class="menu-blok" onclick=scrollujPolecane()> Polecamy </div>
+          <div class="menu-blok" onclick=scrollujKalendarz()> Formularz </div>
+          <div class="menu-blok" onclick=scrollujGaleria()> Galeria </div>
+          <div class="menu-blok2">   <app-skrypt></app-skrypt>  </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-12 baner-tlo">
+    <div class="col-md" id="baner">
+      <div class="row outer">
+
+
+        <div class="object-and-details col-md" id="baner-zdjecie">
+          <img src="assets\images\static.JPG" alt="Przybliżenie na gitarę muzyka, stojącego na scenie." loading="lazy">
+          <details open>
+            <!-- added role=button to summary to resolve iOS funkiness -->
+            <summary role="button" aria-label="static image"></summary>
+            <div class="object-and-details1">
+              <img src="assets\images\video.gif" alt="Przybliżenie na gitarę muzyka, stojącego na scenie i grającego krótki riff." loading="lazy">
+            </div>
+          </details>
+        </div>
+
+        <div class="col-md" id="baner-tresc">
+          <h1> Rozwijaj się muzycznie </h1>
+          <p> Dołącz do artystycznej społeczności Łodzi i organizuj swoje własne wydarzenia z naszą pomocą. Bierzemy na siebie odpowiedzialność organizacji eventów, w czym mamy już wieloletnie doświadczenie. Artystom pozostawiamy pasję i talent, który pomożemy rozwinąć. </p>
+          <div id="baner-przycisk" onclick=scrollujKalendarz()> WYPRÓBUJ JUŻ TERAZ </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="container2">
+
+    <div class="col-12 naglowek" id="polecane"><hr class="hr-top"><br><div>POLECAMY</div><br><hr class="hr-bottom"></div>
+
+    <div class="row">
+      <div class="col-sm wydarzenie-container"> 
+        <div class="wydarzenie-hover"> Sanah to jedna z najciekawszych wokalistek z nurtu tzw. quality pop na polskiej scenie. W 2019 roku wydała szereg singli, którymi zainteresowała i zdobyła wielu fanów. W roku 2020 roku jej single  ,  i  pokochała cała Polska - na tyle, że debiutancka płyta sanah „Królowa dram” zadebiutowała na 1. miejscu list sprzedaży płyt OLiS i szybko zyskała status Platyny. Rok pozniej sukces ten powtorzyla z hitowym albumem „Irenka” - hity Ale jazz! , etc. (na disco) czy ten Stan ponownie podbiły wszystkie możliwe listy przebojów. Jesienią ukaże się reedycja „Irenki” a na niej m.in. najsłynniejszy nieznany utwór ostatnich miesięcy - Kolońska i szlugi! </div> 
+        <img alt="Okładka najowszego albumu sanah - Uczta" src="assets/images/sanah.jpg"> 
+        <p class="wydarzenie-opis">Koncert Sanah, 18 czerwca 2022, ul. Piotrkowska 100 </p>
+       </div>
+       <div class="col-sm wydarzenie-container"> 
+        <div class="wydarzenie-hover"> Świetne teksty, wspaniały wokal i przeszywająca melodia. To nie wystarczy, żeby grać świetne koncerty. Do tego potrzebna jest charyzma, dzięki której porwiesz publiczność i zapewnisz jej wspomnienia, które zostaną z nimi do końca życia. Przyjdź na te otwarte warsztaty, posłuchaj ludzi, którzy stoją na scenie od lat i wiedzą, jak zrobić prawdziwe show. </div> 
+        <img alt="Publiczność bawiąca się w trakcie koncertu" src="assets/images/k1.png"> 
+        <p class="wydarzenie-opis">Warsztaty "Sztuka pracy z widownią, 24 czerwca 2022, ul. Narutowicza 25 </p>
+       </div>
+       <div class="col-sm wydarzenie-container"> 
+        <div class="wydarzenie-hover"> Rozpocznij sezon wakacyjny razem z nami, tworząc muzykę z innymi świetnymi artystami. Oddaj cząstkę swojej twórczości, zyskaj nowe wspomnienia, umiejętności, a może nawet nowych członków zespołu. </div> 
+        <img alt="Grupa muzyków w trakcie jam session" src="assets/images/jamsession.jpg"> 
+        <p class="wydarzenie-opis"> Wakacyjne JamSession, 30 czerwca 2022, ul. Piotrkowska 100 </p>
+       </div>
+       <div class="col-sm wydarzenie-container"> 
+        <div class="wydarzenie-hover"> „Emocja. Przy braku jakichkolwiek założeń to słowo najbardziej sunie mi się na usta. Na przestrzeni wielu miesięcy dojrzewałem, rosłem wraz z tym projektem. Czego możesz się po nim spodziewać? Obserwuje to co widzę i piszę. Wewnętrzne dziecko bije się z kandydatem na prezydenta. Płacz w najszczęśliwszym wydaniu. Nazywam się Bartek, a to moja płyta. Dzięki za zaufanie.” </div> 
+        <img alt="Młody raper Przyłu" src="assets/images/przylu.jpg"> 
+        <p class="wydarzenie-opis"> Koncert Przyłu, 7 lipca 2022, ul. Piotrkowska 100 </p>
+       </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row notka-bilety">
+      <div>
+        Bilety na każde wydarzenie są dostępne bezpośrednio w lokalu lub poprzez kontakt mailowy: bilety@gmail.com. Jeśli chcesz zaproponować swoje wydarzenie, skorzystaj z poniższego formularza.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+  
+    <div id="formularz-pointer" class="col-12 naglowek odsun"><hr class="hr-top"><br><div> ORGANIZOWANE EVENTY </div><br><hr class="hr-bottom"></div>
+
+
+    <div class="row notka-bilety">
+      <div>
+        Poprawne wypełnienie poniższego formularza sprawi, że bedzie on widoczny na naszym harmonogramie wydarzeń. W ciągu 24h dostaniesz informację, czy wydarzenie zostało przez nas zweryfikowane. Aby zmaksymalizować swoje szanse, sprawdź czy tego dnia dany lokal jest wolny, a twój adres e-mail jest poprawny.
+      </div>
+      
+    </div>
+
+    <div class="row notka-bilety cena">  
+      <div>
+        Ile Cię to będzie kosztować? <b>Nic. Nie płacisz ani grosza.</b> Pobierzemy prowizję od sprzedanych przez nas biletów, a resztę zarobków przekażemy Tobie.
+        <br> Dokładne szczegóły przekażemy Ci w wiadomości zwrotnej po weryfikacji Twojego wydarzenia.
+      </div>
+    </div>
+
+    <div class="row baner-tlo" id="rezerwacje">
+      <div class="col-md-8" id="kalendarz">
+
+        <div class="naglowek-kalendarz">HARMONOGRAM WYDARZEŃ</div>
+        <div class="naglowek-kalendarz-miejsce "> ul. Piotrkowska 100 </div>
+        
+
+        <div>
+          <div class="text wydarzenia-box" *ngFor="let item of (items | async)?.slice().reverse()" [ngStyle]="{'display':item.verified === 'Wydarzenie zweryfikowane' && item.place === 'ul. Piotrkowska 100' ? 'block' : 'none' }">
+            <div class="row">
+              <div class="col-sm kalendarz-data absolute-center" > 
+                <div class="kalendarz-data-data">{{item.date}}</div>
+                <div class="kalendarz-tytul"> <b> {{item.name}} </b> </div> 
+                <div class="kalendarz-data-lokal">{{item.type}} - {{item.place}}</div>
+                <div class="kalendarz-data-rodzaj" [ngStyle]="{'color':item.verified === 'Wydarzenie zweryfikowane' ? 'rgb(119, 255, 29)' : 'orange' }"> {{item.verified}} </div>
+              </div>
+              <div class="col-sm">
+                <div class="col-sm kalendarz-opis"> {{item.description}} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="naglowek-kalendarz-miejsce ">  ul. Narutowicza 25 </div>
+       
+        <div>
+          <div class="text wydarzenia-box" *ngFor="let item of (items | async)?.slice().reverse()" [ngStyle]="{'display':item.verified === 'Wydarzenie zweryfikowane' && item.place === 'ul. Narutowicza 25' ? 'block' : 'none' }">
+            <div class="row">
+              <div class="col-sm kalendarz-data absolute-center" > 
+                <div class="kalendarz-data-data">{{item.date}}</div>
+                <div class="kalendarz-tytul"> <b> {{item.name}} </b> </div> 
+                <div class="kalendarz-data-lokal">{{item.type}} - {{item.place}}</div>
+                <div class="kalendarz-data-rodzaj" [ngStyle]="{'color':item.verified === 'Wydarzenie zweryfikowane' ? 'rgb(119, 255, 29)' : 'orange' }"> {{item.verified}} </div>
+              </div>
+              <div class="col-sm">
+                <div class="col-sm kalendarz-opis"> {{item.description}} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="naglowek-kalendarz "> NOWE ZGŁOSZENIA </div>
+        <div>
+          <div class="text wydarzenia-box" *ngFor="let item of (items | async)?.slice().reverse()" [ngStyle]="{'display':item.verified === 'Wydarzenie zweryfikowane' ? 'none' : 'block' }">
+            <div class="row">
+              <div class="col-sm kalendarz-data absolute-center" > 
+                <div class="kalendarz-data-data">{{item.date}}</div>
+                <div class="kalendarz-tytul"> <b> {{item.name}} </b> </div> 
+                <div class="kalendarz-data-lokal">{{item.type}} - {{item.place}}</div>
+                <div class="kalendarz-data-rodzaj" [ngStyle]="{'color':item.verified === 'Wydarzenie zweryfikowane' ? 'rgb(119, 255, 29)' : 'orange' }"> {{item.verified}} </div>
+              </div>
+              <div class="col-sm">
+                <div class="col-sm kalendarz-opis"> {{item.description}} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-4" id="formularz2">
+        <div class="naglowek-kalendarz naglowek-formularz">DODAJ WYDARZENIE</div>
+        <app-formularz>
+        
+        </app-formularz>
+      </div>
+    </div>
+
+
+    <div class="col-12 naglowek odsun" id="galeria-pointer"><hr class="hr-top"><br><div>POCZUJ ATMOSFERĘ</div><br><hr class="hr-bottom"></div>
+  </div>
+    <div class="container">
+    <app-gallery></app-gallery>
+    </div>
+
+
+
+
+  <div class="baner-tlo">
+    <div id="footer">
+      <div class="footer-container">
+         <div class="row paddingstopka">
+          <div class="col-sm row"> 
+            <div class="col-sm"> <h3>Kontakt</h3><br> Łódź, ul. Piotrkowska 120 <br> example@gmail.com <br> 555-555-555 <br> </div>
+            <div class="col-sm"> <h3>Autorzy</h3><br> Hubert Cywka<br>Wiktor Ciszewski<br>Jakub Karaś</div>
+          </div>
+          <div class="col-sm" id="footer-img-container">
+            <img class="footer-img" alt="Popularna grupa muzyczna BTS" src="assets/images/muzyk.png">
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+ <!--<div class="socialmedia share"> </div>
+	<span id="socialmediaicons">
+		<a href="#" target="_blank" class="socialmedia Facebook"> </a>
+		<a href="#" target="_blank" class="socialmedia Twitter"> </a>
+		<a href="#" target="_blank" class="socialmedia Google"> </a>
+		<a href="#" target="_blank" class="socialmedia Youtube"> </a>
+		<a href="#" target="_blank" class="socialmedia Instagram"> </a>
+	</span>-->

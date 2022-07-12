@@ -1,0 +1,200 @@
+body, form, div, span {
+    margin: 0px;
+}
+
+span {
+
+   font-size: 100%;
+}
+
+input[type=text],
+input[type=password] {
+
+    width: 90%;
+    height: 60%;
+    border-radius: 5px;
+    border-color: rgb(255, 196, 0)
+}
+
+form {
+    height: 80%;
+    width: 100%;
+}
+
+.absolute-center {
+
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+
+textarea {
+    width: 90%;
+    resize: none;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    border-color: rgb(255, 196, 0);
+}
+
+.help {
+    margin-left: 10px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 100%;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 9px;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.help:hover {
+    color: rgb(255, 196, 0);
+    border-color: rgb(255, 196, 0);
+}
+
+
+.pomoc {
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+    font-size: 11px;
+    color: rgb(42, 0, 158);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+#opis-pomoc {
+    bottom: 5px;
+}
+
+#opis-help {
+    bottom: 70px;
+}
+
+.blad {
+    position: absolute;
+    height: 20px;
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+
+.naglowek-formularz {
+    margin-bottom: 5px;
+}
+
+#naglowek-formularz {
+    font-size: 140%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    color: rgb(119, 255, 29);
+	margin-bottom: 10%;
+}
+
+#formularz {
+
+}
+
+.form-row .row {
+	text-align: left;
+	margin-bottom: 1px;
+}
+
+.form-row .row .col-4 {
+	text-align: right;
+}
+
+
+.button {
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(119, 255, 29);
+    border: 2px solid rgb(119, 255, 29);
+    transition: 0.2s;
+    margin: 0px 5px;
+}
+
+input[type=reset] {
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+input[type=reset]:hover {
+    background-color: rgb(255, 93, 29);
+    border: 2px solid rgb(255, 93, 29);
+}
+
+select {
+    height: 25px;
+}
+
+#miejsce {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#rodzaj {
+    width: 50%;
+}
+
+#start-data {
+    margin-left: 5%;
+    height: 25px;
+    width: 35%;
+}
+
+.button:hover {
+    background-color: rgb(187, 255, 142);
+    border-color: rgb(187, 255, 142);
+}
+
+#formularz div {
+    position: relative;
+}
+
+#span-opis {
+
+}
+
+#sukces {
+	height: 150px;
+    padding: 10px;
+	width: 450px;
+    color: white;
+    border: 2px solid rgb(255, 93, 29);
+    background-color: rgb(42, 0, 158);;
+	position:fixed;
+    top: -300px;
+    left: calc(50% - 225px);
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#sukces input {
+    margin-top: 10px;
+}

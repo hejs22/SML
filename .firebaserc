@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "stowarzyszeniemuzycznedb"
+  },
+  "targets": {
+    "stowarzyszeniemuzycznedb": {
+      "hosting": {
+        "zadanie": [
+          "stowarzyszeniemuzycznedb"
+        ]
+      }
+    }
+  }
+}

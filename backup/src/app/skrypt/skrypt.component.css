@@ -1,0 +1,32 @@
+
+.przycisk {
+    margin-top:10px;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-weight: 700;
+    border: 0px;
+}
+
+.nocny {
+    background-color: rgb(26, 24, 24);
+    color: white;
+    position:absolute;
+    left:10px;
+    top: 0px;
+    visibility: visible;
+}
+
+.jasny { 
+    background-color: rgb(100, 180, 255);
+    color: black;
+    position:absolute;
+    top: 0px;
+    left: 10px;
+    visibility: hidden;
+}
+

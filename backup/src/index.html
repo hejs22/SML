@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie</title>
+  <script type = "text/javascript">
+    
+    var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("menu").style.top = "0";
+      } else {
+        document.getElementById("menu").style.top = "-60px";
+      }
+        prevScrollpos = currentScrollPos;
+      }
+
+
+
+
+          function czysc() {
+              document.getElementById("login-pomoc").innerHTML = "";
+              document.getElementById("haslo-pomoc").innerHTML = "";
+              document.getElementById("haslopow-pomoc").innerHTML = "";
+              document.getElementById("email-pomoc").innerHTML = "";
+          }
+  
+          function loginPomoc() {
+              document.getElementById("login-pomoc").innerHTML = "Login musi mieć co najmniej 4 znaki";
+          }
+  
+          function hasloPomoc() {
+              document.getElementById("haslo-pomoc").innerHTML = "Hasło musi mieć co najmniej 8 znaków";
+          }
+  
+          function haslopowPomoc() {
+              document.getElementById("haslopow-pomoc").innerHTML = "Powtórz hasło wpisane w poprzednim polu";
+          }
+  
+          function emailPomoc() {
+              document.getElementById("email-pomoc").innerHTML = "Wymagany do weryfikacji konta";
+          }
+  
+          function wyczysc() {
+              document.getElementById("login-pomoc").innerHTML = "";
+              document.getElementById("haslo-pomoc").innerHTML = "";
+              document.getElementById("haslopow-pomoc").innerHTML = "";
+              document.getElementById("email-pomoc").innerHTML = "";
+              document.getElementById("login-help").innerHTML = "?"
+              document.getElementById("haslo-help").innerHTML = "?"
+              document.getElementById("haslopow-help").innerHTML = "?"
+              document.getElementById("email-help").innerHTML = "?"
+              document.getElementById("login-help").style = "border-color:black; color:black"
+              document.getElementById("haslo-help").style = "border-color:black; color:black"
+              document.getElementById("haslopow-help").style = "border-color:black; color:black"
+              document.getElementById("email-help").style = "border-color:black; color:black"
+          }
+          
+          var check1;
+          var check2;
+          var check3;
+          var check4;
+  
+          function walidacja() {
+              let login = document.getElementById("login").value;
+              let haslo = document.getElementById("haslo").value;
+              let haslopow = document.getElementById("haslopow").value;
+              let email = document.getElementById("email").value;
+  
+              if (login.length < 4) {
+                  document.getElementById("login-pomoc").innerHTML = "<b>Niedozwolona nazwa użytkownika</b>";
+                  document.getElementById("login-help").innerHTML = "✗";
+                  document.getElementById("login-help").style = "border-color:orangered; color:orangered";
+                  check1 = 0;
+              } else {
+                  document.getElementById("login-pomoc").innerHTML = "";
+                  document.getElementById("login-help").innerHTML = "✓";
+                  document.getElementById("login-help").style = "border-color:green; color:green";
+                  check1 = 1;
+              }
+  
+              if (haslo.length < 8) {
+                  document.getElementById("haslo-pomoc").innerHTML = "<b>Zbyt słabe hasło</b>";
+                  document.getElementById("haslo-help").innerHTML = "✗";
+                  document.getElementById("haslo-help").style = "border-color:orangered; color:orangered";
+                  check2 = 0;
+              } else {
+                  document.getElementById("haslo-pomoc").innerHTML = "";
+                  document.getElementById("haslo-help").innerHTML = "✓";
+                  document.getElementById("haslo-help").style = "border-color:green; color:green";
+                  check2 = 1;
+              }
+  
+              if (haslo != haslopow || haslo == "") {
+                  document.getElementById("haslopow-pomoc").innerHTML = "<b>Hasła nie zgadzają się</b>";
+                  document.getElementById("haslopow-help").innerHTML = "✗";
+                  document.getElementById("haslopow-help").style = "border-color:orangered; color:orangered";
+                  check3 = 0;
+              } else {
+                  document.getElementById("haslopow-pomoc").innerHTML = "";
+                  document.getElementById("haslopow-help").innerHTML = "✓";
+                  document.getElementById("haslopow-help").style = "border-color:green; color:green";
+                  check3 = 1;
+              }
+  
+              if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+                  document.getElementById("email-pomoc").innerHTML = "<b>Niepoprawny adres email</b>";
+                  document.getElementById("email-help").innerHTML = "✗";
+                  document.getElementById("email-help").style = "border-color:orangered; color:orangered";
+                  check4 = 0;
+              } else {
+                  document.getElementById("email-pomoc").innerHTML = "";
+                  document.getElementById("email-help").innerHTML = "✓";
+                  document.getElementById("email-help").style = "border-color:green; color:green";
+                  check4 = 1;
+              }
+              
+              if (check1 == 1 && check2 == 1 && check3 == 1 && check4 == 1) {
+                   document.getElementById("naglowek-formularz").innerHTML = "Sukces!";
+              }
+          }
+          
+  </script>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>
